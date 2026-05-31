@@ -9,6 +9,8 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 
+QueueHandle_t command_queue;
+
 void app_main(void)
 {
     start_cli_task();
